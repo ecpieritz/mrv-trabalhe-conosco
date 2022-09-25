@@ -2,22 +2,23 @@
 @import './components/footer.scss';
 @import './components/container.scss';
 @import './components/hero-banner.scss';
+@import './components/breadcrumb.scss';
 
 // Import fonts
 @font-face {
-    font-family: "Averta";
-    font-style: bold;
-    font-weight: 700;
-    src: url(../fonts/AvertaStd-Bold.woff) format('woff'),
-        url(../fonts/AvertaStd-Bold.woff2) format('woff2');
+  font-family: "Averta";
+  font-style: bold;
+  font-weight: 700;
+  src: url(../fonts/AvertaStd-Bold.woff) format('woff'),
+    url(../fonts/AvertaStd-Bold.woff2) format('woff2');
 }
 
 @font-face {
-    font-family: "Averta";
-    font-style: normal;
-    font-weight: 400;
-    src: url(../fonts/AvertaStd-Regular.woff) format('woff'),
-        url(../fonts/AvertaStd-Regular.woff2) format('woff2');
+  font-family: "Averta";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/AvertaStd-Regular.woff) format('woff'),
+    url(../fonts/AvertaStd-Regular.woff2) format('woff2');
 }
 
 // Colors
@@ -27,20 +28,45 @@ $mrv-gray: #5D615F;
 $mrv-text: #242625;
 
 // Texts styles
-.mrv{
-    &__container{
-        color: $mrv-text;
-    }
-    &__title{
-        &__h1-white{
-            color: $mrv-white;
-            font-family: "Averta";
-            font-weight: 700;
-            font-size: 40px;
+.mrv {
+  &__container {
+    color: $mrv-text;
+  }
 
-            @media(max-width: 680px){
-              font-size: 25px;
-            }
-        }
+  &__title {
+    &__h1 {
+      font-family: "Averta";
+      font-weight: 700;
+      font-size: 40px;
+
+      @media(max-width: 680px) {
+        font-size: 25px;
+      }
     }
+  }
+}
+
+body {
+  font-family: Averta;
+
+  p {
+    font-weight: 400;
+    font-size: 16px;
+
+    @media(max-width: 680px) {
+      font-size: 14px;
+    }
+  }
+}
+
+// Colors 
+.mrv{
+  &__text{
+    &__white{
+      color: $mrv-white;
+    }
+    &__green{
+      color: $mrv-green;
+    }
+  }
 }

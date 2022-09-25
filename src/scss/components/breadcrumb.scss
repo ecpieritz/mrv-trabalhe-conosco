@@ -1,0 +1,21 @@
+.mrv {
+  &__breadcrumb {
+    width: 100%;
+    margin-top: 33px;
+
+    p {
+      padding-left: 30px;
+      background-repeat: no-repeat;
+      background-size: 22px;
+      background-position-y: center left;
+      margin: 0;
+      font-weight: 700;
+
+      a{
+        &:hover{
+          color: #006B3F;
+        }
+      }
+    }
+  }
+}

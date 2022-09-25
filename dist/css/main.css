@@ -110,6 +110,22 @@
   }
 }
 
+.mrv__breadcrumb {
+  width: 100%;
+  margin-top: 33px;
+}
+.mrv__breadcrumb p {
+  padding-left: 30px;
+  background-repeat: no-repeat;
+  background-size: 22px;
+  background-position-y: center left;
+  margin: 0;
+  font-weight: 700;
+}
+.mrv__breadcrumb p a:hover {
+  color: #006B3F;
+}
+
 @font-face {
   font-family: "Averta";
   font-style: bold;
@@ -125,14 +141,33 @@
 .mrv__container {
   color: #242625;
 }
-.mrv__title__h1-white {
-  color: #fff;
+.mrv__title__h1 {
   font-family: "Averta";
   font-weight: 700;
   font-size: 40px;
 }
 @media (max-width: 680px) {
-  .mrv__title__h1-white {
+  .mrv__title__h1 {
     font-size: 25px;
   }
+}
+
+body {
+  font-family: Averta;
+}
+body p {
+  font-weight: 400;
+  font-size: 16px;
+}
+@media (max-width: 680px) {
+  body p {
+    font-size: 14px;
+  }
+}
+
+.mrv__text__white {
+  color: #fff;
+}
+.mrv__text__green {
+  color: #006B3F;
 }
