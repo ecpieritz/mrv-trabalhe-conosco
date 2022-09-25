@@ -1,2 +1,41 @@
 @import './components/hearder.scss';
 @import './components/footer.scss';
+@import './components/container.scss';
+@import './components/hero-banner.scss';
+
+// Import fonts
+@font-face {
+    font-family: "Averta";
+    font-style: bold;
+    font-weight: 700;
+    src: url(../fonts/AvertaStd-Bold.woff) format('woff'),
+        url(../fonts/AvertaStd-Bold.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: "Averta";
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/AvertaStd-Regular.woff) format('woff'),
+        url(../fonts/AvertaStd-Regular.woff2) format('woff2');
+}
+
+// Colors
+$mrv-white: #fff;
+$mrv-green: #006B3F;
+$mrv-gray: #5D615F;
+$mrv-text: #242625;
+
+// Texts styles
+.mrv{
+    &__container{
+        color: $mrv-text;
+    }
+    &__title{
+        &__h1-white{
+            color: $mrv-white;
+            font-family: "Averta";
+            font-weight: 700;
+        }
+    }
+}
