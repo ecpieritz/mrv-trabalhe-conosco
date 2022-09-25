@@ -36,6 +36,11 @@ $mrv-text: #242625;
             color: $mrv-white;
             font-family: "Averta";
             font-weight: 700;
+            font-size: 40px;
+
+            @media(max-width: 680px){
+              font-size: 25px;
+            }
         }
     }
 }

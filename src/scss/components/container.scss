@@ -6,8 +6,14 @@
     padding: 0 56px;
     z-index: -2;
 
-    @media(max-width: 680px){
-      width: 680px;
+    @media(max-width: 1024px){
+        width: 100%;
     }
+
+    @media(max-width: 680px){
+      width: 100%;
+      padding: 0 10px;
+    }
+
   }
 }

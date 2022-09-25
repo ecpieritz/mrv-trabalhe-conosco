@@ -1,0 +1,60 @@
+.mrv {
+  &__hero-banner {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 48px 0 0;
+    position: relative;
+
+    &__text {
+      width: 612px;
+      background: linear-gradient(225deg, #079D56 0%, #006B3F 100%);
+      padding: 106px 92px;
+      border-radius: 32px;
+      @media(max-width: 1024px){
+        padding: 60px 40px;
+        width: 480px;
+
+      }
+      @media(max-width: 680px){
+        padding: 30px 20px;
+        border-radius: 20px;
+        margin-top: 310px;
+        margin-left: 62px;
+        width: 100%;
+
+        
+        h1{
+          width: 60%;
+        }
+      }
+    }
+    
+    &__img {
+      position: absolute;
+      top: 0;
+      margin-left: 530px;
+      z-index: -1;
+      @media(max-width: 1024px){
+        margin-left: 370px;
+      }
+      @media(max-width: 680px){
+        margin-left: -10px;
+      }
+      
+      img {
+        width: 718px;
+        border-radius: 32px;
+        @media(max-width: 1024px){
+          width: 500px;
+        }
+        @media(max-width: 680px){
+          border-radius: 20px;
+          width: auto;
+          height: 390px;
+        }
+
+      }
+    }
+  }
+}
