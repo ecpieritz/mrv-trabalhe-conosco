@@ -320,6 +320,60 @@
   }
 }
 
+.modal .modal-dialog {
+  min-width: 100vw;
+  height: 100% !important;
+  position: absolute;
+  top: -30px;
+  bottom: 0;
+}
+.modal .modal-dialog .modal-content {
+  border-radius: 0 !important;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 56px 37px;
+  height: 100%;
+}
+.modal .modal-dialog .modal-content .modal-body .mrv-logo {
+  margin-bottom: 265px;
+}
+@media (max-width: 680px) {
+  .modal .modal-dialog .modal-content .modal-body .mrv-logo {
+    margin-bottom: 35%;
+  }
+}
+.modal .modal-dialog .modal-content .modal-body div {
+  margin: 0 auto;
+  width: 50%;
+}
+@media (max-width: 680px) {
+  .modal .modal-dialog .modal-content .modal-body div {
+    margin: 0;
+  }
+}
+.modal .modal-dialog .modal-content .modal-body .mrv__button {
+  position: absolute;
+  bottom: 32px;
+  right: 32px;
+}
+@media (max-width: 680px) {
+  .modal .modal-dialog .modal-content .modal-body .mrv__button {
+    left: 40%;
+    right: auto;
+  }
+}
+@media (max-width: 680px) {
+  .modal .modal-dialog .modal-content {
+    padding: 20px 10px;
+  }
+}
+@media (max-width: 680px) {
+  .modal .modal-dialog {
+    left: -10px;
+    height: 53% !important;
+  }
+}
+
 @font-face {
   font-family: "Averta";
   font-style: bold;
@@ -386,6 +440,15 @@ body label, body select {
 }
 .mrv__button.black-link:hover {
   color: #5D615F;
+}
+.mrv__button.close {
+  background-color: #006B3F;
+  padding: 12px;
+  border-radius: 30px;
+}
+.mrv__button.close img {
+  width: 24px;
+  height: 24px;
 }
 @media (max-width: 680px) {
   .mrv__desktop {

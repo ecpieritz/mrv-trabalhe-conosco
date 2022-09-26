@@ -63,9 +63,9 @@
               <img src="./dist/img/logos/mrv__logo__mrv-e-co.svg" alt="MRV & CO">
 
               <div class="mrv__col-6-section__img__logos__links">
-                <button><a href="#" target="_blank" rel="noopener noreferrer"><img
+                <button type="button" data-toggle="modal" data-target="#mrv-modal"><a target="_blank" rel="noopener noreferrer"><img
                       src="./dist/img/logos/mrv__logo__mrv.svg" alt="Clique aqui para ir ao MVR"></a></button>
-                <button><a href="#" target="_blank" rel="noopener noreferrer"><img
+                <button type="button" data-toggle="modal" data-target="#institulo-modal"><a target="_blank" rel="noopener noreferrer"><img
                       src="./dist/img/logos/mrv__logo__instituto.svg"
                       alt="Clique aqui para ir ao InstitutoMVR"></a></button>
 
@@ -78,6 +78,38 @@
         </div>
       </div>
     </section>
+
+    <!-- START Modals -->
+    <div class="modal fade" id="mrv-modal" tabindex="-1" aria-labelledby="mrvModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img class="mrv-logo" src="./dist/img/logos/mrv__logo__mrv__modal.svg" alt="">
+            <div>
+              <h1 class="mrv__title__h1">MRV:</h1>
+              <p>A Maior Construtora da América Latina é a principal frente de atuação do MRV&CO. Com o propósito de construir sonhos que transformam o mundo, a MRV abre as portas para que milhares de brasileiros possam conquistar um novo lar, com mais benefícios e facilidades.</p>
+            </div>
+            <button type="button" class="mrv__button close" data-dismiss="modal"><img src="./dist/img/icons/mrv__icon__white-close.svg" alt=""></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="institulo-modal" tabindex="-1" aria-labelledby="institutoModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img class="mrv-logo" src="./dist/img/logos/mrv__logo__mrv__modal.svg" alt="">
+            <div>
+              <h1 class="mrv__title__h1">Instituto MRV:</h1>
+              <p>A Maior Construtora da América Latina é a principal frente de atuação do MRV&CO. Com o propósito de construir sonhos que transformam o mundo, a MRV abre as portas para que milhares de brasileiros possam conquistar um novo lar, com mais benefícios e facilidades.</p>
+            </div>
+            <button type="button" class="mrv__button close" data-dismiss="modal"><img src="./dist/img/icons/mrv__icon__white-close.svg" alt=""></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END Modals -->
 
     <section class="mrv__accordion" style="background-image: url(./dist/img/mrv__our-values__bg.png);">
       <div class="mrv__container">

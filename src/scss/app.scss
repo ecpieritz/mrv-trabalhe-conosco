@@ -6,6 +6,7 @@
 @import './components/col-6-section.scss';
 @import './components/accordion.scss';
 @import './components/vacancy-form.scss';
+@import './components/modal.scss';
 
 // Import fonts
 @font-face {
@@ -97,6 +98,16 @@ body {
       text-decoration: underline;
       &:hover{
         color: $mrv-gray;
+      }
+    }
+    &.close{
+      background-color: $mrv-green;
+      padding: 12px;
+      border-radius: 30px;
+      
+      img{
+        width: 24px;
+        height: 24px;
       }
     }
   }
