@@ -90,8 +90,7 @@
               <div class="card mrv__accordion__card">
                 <div class="card-header" id="your-beauty">
                   <h2 class="mb-0">
-                    <button
-                      class="btn bg-down btn-link btn-block text-left" type="button" data-toggle="collapse"
+                    <button class="btn bg-down btn-link btn-block text-left" type="button" data-toggle="collapse"
                       data-target="#your-beauty-collapse" aria-expanded="true" aria-controls="your-beauty-collapse">
                       Sua Beleza
                     </button>
@@ -114,9 +113,9 @@
               <div class="card mrv__accordion__card">
                 <div class="card-header" id="your-mind">
                   <h2 class="mb-0">
-                    <button
-                      class="btn bg-down btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
-                      data-target="#your-mind-collapse" aria-expanded="false" aria-controls="your-mind-collapse">
+                    <button class="btn bg-down btn-link btn-block text-left collapsed" type="button"
+                      data-toggle="collapse" data-target="#your-mind-collapse" aria-expanded="false"
+                      aria-controls="your-mind-collapse">
                       Sua Mente
                     </button>
                   </h2>
@@ -141,9 +140,9 @@
               <div class="card mrv__accordion__card">
                 <div class="card-header" id="encounter">
                   <h2 class="mb-0">
-                    <button
-                      class="btn bg-down btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
-                      data-target="#encounter-collapse" aria-expanded="true" aria-controls="encounter-collapse">
+                    <button class="btn bg-down btn-link btn-block text-left collapsed" type="button"
+                      data-toggle="collapse" data-target="#encounter-collapse" aria-expanded="true"
+                      aria-controls="encounter-collapse">
                       Encontro
                     </button>
                   </h2>
@@ -165,9 +164,9 @@
               <div class="card mrv__accordion__card">
                 <div class="card-header" id="your-style">
                   <h2 class="mb-0">
-                    <button
-                      class="btn bg-down btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
-                      data-target="#your-style-collapse" aria-expanded="false" aria-controls="your-style-collapse">
+                    <button class="btn bg-down btn-link btn-block text-left collapsed" type="button"
+                      data-toggle="collapse" data-target="#your-style-collapse" aria-expanded="false"
+                      aria-controls="your-style-collapse">
                       Seu Estilo
                     </button>
                   </h2>
@@ -204,11 +203,13 @@
                 </div>
               </div>
               <a class="carousel-control-prev" href="#our-space-carousel" role="button" data-slide="prev">
-                <span class="carousel-green" aria-hidden="true"><img src="./dist/img/icons/mrv__icon__white-arrow__left.svg" alt=""></span>
+                <span class="carousel-green" aria-hidden="true"><img
+                    src="./dist/img/icons/mrv__icon__white-arrow__left.svg" alt=""></span>
                 <span class="sr-only">Anterior</span>
               </a>
               <a class="carousel-control-next" href="#our-space-carousel" role="button" data-slide="next">
-                <span class="carousel-green" aria-hidden="true"><img src="./dist/img/icons/mrv__icon__white-arrow__right.svg" alt=""></span>
+                <span class="carousel-green" aria-hidden="true"><img
+                    src="./dist/img/icons/mrv__icon__white-arrow__right.svg" alt=""></span>
                 <span class="sr-only">Próximo</span>
               </a>
             </div>
@@ -216,16 +217,61 @@
 
           <div class="col-md-6 mrv__col-6-section__text">
             <h1 class="mrv__title__h1">Conheça nosso espaço</h1>
-            <p>Temos um ambiente dinâmico, que estimula o aprendizado e convida todos a pensarem no bem comum. Afinal, estamos construindo hoje as bases para um mundo melhor, cheio de inovação, sustentabilidade e integridade. E tudo isso a gente já encontra por aqui.</p>
+            <p>Temos um ambiente dinâmico, que estimula o aprendizado e convida todos a pensarem no bem comum. Afinal,
+              estamos construindo hoje as bases para um mundo melhor, cheio de inovação, sustentabilidade e integridade.
+              E tudo isso a gente já encontra por aqui.</p>
 
-            <a class="mrv__button black-link" href="#" target="_blank" rel="noopener noreferrer">Clique aqui e faça um tour virtual pela nossa sede em BH (MG).</a>
+            <a class="mrv__button black-link" href="#" target="_blank" rel="noopener noreferrer">Clique aqui e faça um
+              tour virtual pela nossa sede em BH (MG).</a>
           </div>
 
         </div>
       </div>
     </section>
 
-    <section></section>
+    <section class="mrv__vacancy-form" style="background-image: url(./dist/img/mrv__vacancy__bg.png);">
+      <div class="mrv__container">
+        <h1 class="mrv__title__h1">Vagas disponíveis</h1>
+        <p>Encontre a oportunidade que mais combina com você:</p>
+
+        <div class="row">
+          <div class="col-md-5">
+            <form>
+              <div class="form-group">
+                <label for="city-to-work">Em qual cidade você quer trabalhar?</label>
+                <select class="form-control" id="city-to-work">
+                  <option selected disabled>Selecione um tipo</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="acting-area">Qual sua área de atuação?</label>
+                <select class="form-control" id="acting-area">
+                  <option selected disabled>Selecione área</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="type-of-vacancy">E que tipo de vaga você procura?</label>
+                <textarea class="form-control" id="type-of-vacancy" rows="1"></textarea>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-md-7">
+            <img src="./dist/img/icons/mrv__icon__vacancy__guy.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="mrv__footer">
@@ -243,9 +289,9 @@
   <script>
     $('.btn.btn-link').on({
       click: function () {
-        if($(this).hasClass('bg-down')){
+        if ($(this).hasClass('bg-down')) {
           $(this).addClass('bg-up').removeClass('bg-down')
-        } else{
+        } else {
           $(this).addClass('bg-down').removeClass('bg-up')
         }
       }

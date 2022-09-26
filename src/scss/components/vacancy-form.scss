@@ -1,0 +1,46 @@
+.mrv {
+  &__vacancy-form {
+    margin: 96px 0;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: 300px;
+    min-height: 710px;
+
+    p {
+      margin-bottom: 36px;
+    }
+
+    .col-md-7{
+      border-left: 2px solid #242625;
+      padding: 36px 105px;
+
+      @media(max-width: 680px){
+        display: none;
+      }
+    }
+
+    .col-md-5{
+      form{
+        width: 80%;
+
+        @media(max-width: 680px){
+          width: 95%;
+        }
+      }
+      
+      select, textarea{
+        border: 1px solid #242625;
+      }
+      
+      label{
+        font-weight: 700;
+      }
+    }
+    
+    @media(max-width: 680px){
+      margin-left: 30px;
+      background-image: none !important;
+      min-height: auto;
+    }
+  }
+}

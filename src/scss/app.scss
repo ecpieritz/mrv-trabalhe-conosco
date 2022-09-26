@@ -5,6 +5,7 @@
 @import './components/breadcrumb.scss';
 @import './components/col-6-section.scss';
 @import './components/accordion.scss';
+@import './components/vacancy-form.scss';
 
 // Import fonts
 @font-face {
@@ -32,14 +33,14 @@ $mrv-text: #242625;
 
 body {
   font-family: Averta;
-
+  
   p {
     font-weight: 400;
     font-size: 16px;
-
-    @media(max-width: 680px) {
-      font-size: 14px;
-    }
+  }
+  label, select{
+    font-family: Averta;
+    font-size: 16px;
   }
 }
 
