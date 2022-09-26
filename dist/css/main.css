@@ -179,6 +179,62 @@
   }
 }
 
+.mrv__accordion {
+  margin-top: 36px;
+  padding-top: 60px;
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position: top right;
+  min-height: 450px;
+}
+@media (max-width: 680px) {
+  .mrv__accordion {
+    background-image: none !important;
+  }
+  .mrv__accordion h1, .mrv__accordion p {
+    margin-left: 30px;
+  }
+}
+.mrv__accordion .row {
+  margin-top: 40px;
+}
+.mrv__accordion .row .col-md-4 {
+  padding: 0;
+}
+@media (max-width: 680px) {
+  .mrv__accordion .row {
+    margin-top: 0;
+  }
+}
+.mrv__accordion__card {
+  width: 100%;
+}
+.mrv__accordion__card .card-header {
+  border: none;
+  background-color: #fff;
+}
+.mrv__accordion__card .card-header button {
+  color: #006B3F;
+  font-weight: 700;
+  background-repeat: no-repeat;
+  background-position: right center;
+  border-radius: 0;
+}
+.mrv__accordion__card .card-header button.bg-down {
+  border-bottom: 2px solid #006B3F;
+  background-image: url(../3329430db52ac0c7ddf1.svg);
+}
+.mrv__accordion__card .card-header button.bg-up {
+  border-bottom: none;
+  background-image: url(../206bfb5ded3a1e54c8af.svg);
+}
+.mrv__accordion__card.card {
+  border: none;
+}
+.mrv__accordion__card.card .card-body {
+  border-bottom: 2px solid #006B3F;
+}
+
 @font-face {
   font-family: "Averta";
   font-style: bold;
