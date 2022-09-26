@@ -90,6 +90,14 @@ body {
         color: $mrv-white;
       }
     }
+    &.black-link{
+      color: $mrv-text;
+      font-weight: 700;
+      text-decoration: underline;
+      &:hover{
+        color: $mrv-gray;
+      }
+    }
   }
 
   // Display

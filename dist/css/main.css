@@ -178,6 +178,50 @@
     margin: 24px auto 0;
   }
 }
+.mrv__col-6-section.text-block-right h1 {
+  margin-top: 15px;
+}
+@media (max-width: 680px) {
+  .mrv__col-6-section.text-block-right {
+    margin-left: 30px;
+  }
+  .mrv__col-6-section.text-block-right .row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .mrv__col-6-section.text-block-right .mrv__col-6-section__img {
+    margin-left: -100px;
+  }
+}
+.mrv__col-6-section.text-block-right .carousel {
+  width: 397px;
+  margin-left: 100px;
+}
+.mrv__col-6-section.text-block-right .carousel img {
+  border-radius: 32px;
+}
+.mrv__col-6-section.text-block-right .carousel .carousel-control-prev {
+  background-color: #006B3F;
+  height: 48px;
+  width: 48px;
+  margin-top: 30%;
+  border-bottom-right-radius: 16px;
+  border-top-right-radius: 16px;
+}
+.mrv__col-6-section.text-block-right .carousel .carousel-control-next {
+  background-color: #006B3F;
+  height: 48px;
+  width: 48px;
+  margin-top: 30%;
+  border-bottom-left-radius: 16px;
+  border-top-left-radius: 16px;
+}
+@media (max-width: 680px) {
+  .mrv__col-6-section.text-block-right .carousel {
+    width: 96%;
+    margin-top: 30px;
+  }
+}
 
 .mrv__accordion {
   margin-top: 36px;
@@ -294,6 +338,14 @@ body p {
 .mrv__button.green:hover {
   background-color: #079D56;
   color: #fff;
+}
+.mrv__button.black-link {
+  color: #242625;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.mrv__button.black-link:hover {
+  color: #5D615F;
 }
 @media (max-width: 680px) {
   .mrv__desktop {

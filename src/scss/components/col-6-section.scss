@@ -35,6 +35,7 @@
 
             button {
               border: none;
+
               a {
                 &:not(:last-child) {
                   margin-right: 32px;
@@ -53,6 +54,57 @@
               margin: 24px auto 0;
             }
           }
+        }
+      }
+    }
+
+    &.text-block-right {
+      h1 {
+        margin-top: 15px;
+      }
+
+      @media(max-width: 680px) {
+        margin-left: 30px;
+
+        .row {
+          display: flex;
+          flex-direction: column-reverse;
+        }
+
+        .mrv__col-6-section__img{
+          margin-left: -100px;
+        }
+      }
+
+      .carousel {
+        width: 397px;
+        margin-left: 100px;
+
+        img {
+          border-radius: 32px;
+        }
+
+        .carousel-control-prev {
+          background-color: #006B3F;
+          height: 48px;
+          width: 48px;
+          margin-top: 30%;
+          border-bottom-right-radius: 16px;
+          border-top-right-radius: 16px;
+        }
+        
+        .carousel-control-next {
+          background-color: #006B3F;
+          height: 48px;
+          width: 48px;
+          margin-top: 30%;
+          border-bottom-left-radius: 16px;
+          border-top-left-radius: 16px;
+        }
+
+        @media(max-width: 680px) {
+          width: 96%;
+          margin-top: 30px;
         }
       }
     }
