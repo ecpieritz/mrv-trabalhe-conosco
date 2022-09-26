@@ -3,6 +3,7 @@
 @import './components/container.scss';
 @import './components/hero-banner.scss';
 @import './components/breadcrumb.scss';
+@import './components/col-6-section.scss';
 
 // Import fonts
 @font-face {
@@ -24,11 +25,25 @@
 // Colors
 $mrv-white: #fff;
 $mrv-green: #006B3F;
+$mrv-light-green: #079D56;
 $mrv-gray: #5D615F;
 $mrv-text: #242625;
 
-// Texts styles
-.mrv {
+body {
+  font-family: Averta;
+
+  p {
+    font-weight: 400;
+    font-size: 16px;
+
+    @media(max-width: 680px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.mrv{
+  // Texts styles
   &__container {
     color: $mrv-text;
   }
@@ -44,23 +59,7 @@ $mrv-text: #242625;
       }
     }
   }
-}
-
-body {
-  font-family: Averta;
-
-  p {
-    font-weight: 400;
-    font-size: 16px;
-
-    @media(max-width: 680px) {
-      font-size: 14px;
-    }
-  }
-}
-
-// Colors 
-.mrv{
+  // Colors 
   &__text{
     &__white{
       color: $mrv-white;
@@ -69,4 +68,39 @@ body {
       color: $mrv-green;
     }
   }
+
+  // Buttons
+  &__button{
+    &.green{
+      background-color: $mrv-green;
+      padding: 16px;
+      border-radius: 8px;
+      border: none;
+
+      a{
+        color: $mrv-white;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+      
+      &:hover{
+        background-color: $mrv-light-green;
+        color: $mrv-white;
+      }
+    }
+  }
+
+  // Display
+  &__desktop{
+    @media(max-width: 680px){
+      display: none;
+    }
+  }
+  &__mobile{
+    @media(min-width: 681px){
+      display: none;
+    }
+  }
+
 }

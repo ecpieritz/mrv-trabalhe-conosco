@@ -122,8 +122,61 @@
   margin: 0;
   font-weight: 700;
 }
+@media (max-width: 680px) {
+  .mrv__breadcrumb p {
+    margin-left: 30px;
+  }
+}
 .mrv__breadcrumb p a:hover {
-  color: #006B3F;
+  color: #079D56;
+  text-decoration: none;
+}
+
+.mrv__col-6-section {
+  margin-top: 49px;
+}
+.mrv__col-6-section.text-block-left .mrv__col-6-section__text {
+  padding-right: 80px;
+}
+.mrv__col-6-section.text-block-left .mrv__col-6-section__text p {
+  margin-bottom: 25px;
+}
+@media (max-width: 680px) {
+  .mrv__col-6-section.text-block-left .mrv__col-6-section__text {
+    margin-left: 30px;
+    padding-right: 15px;
+    width: 100%;
+  }
+}
+.mrv__col-6-section.text-block-left .mrv__col-6-section__img__logos {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+  margin-left: auto;
+  margin-top: 138px;
+}
+.mrv__col-6-section.text-block-left .mrv__col-6-section__img__logos__links {
+  margin-top: 24px;
+}
+.mrv__col-6-section.text-block-left .mrv__col-6-section__img__logos__links button {
+  border: none;
+}
+.mrv__col-6-section.text-block-left .mrv__col-6-section__img__logos__links button a:not(:last-child) {
+  margin-right: 32px;
+}
+@media (max-width: 680px) {
+  .mrv__col-6-section.text-block-left .mrv__col-6-section__img__logos {
+    width: 100%;
+    margin-right: auto;
+    margin-top: 0px;
+  }
+  .mrv__col-6-section.text-block-left .mrv__col-6-section__img__logos .mrv__button.mrv__mobile {
+    display: flex;
+    margin: 24px auto 0;
+  }
 }
 
 @font-face {
@@ -138,20 +191,6 @@
   font-weight: 400;
   src: url(../69287d120ea61f7e57e6.woff) format("woff"), url(../6e769d86d57889ddcfb4.woff2) format("woff2");
 }
-.mrv__container {
-  color: #242625;
-}
-.mrv__title__h1 {
-  font-family: "Averta";
-  font-weight: 700;
-  font-size: 40px;
-}
-@media (max-width: 680px) {
-  .mrv__title__h1 {
-    font-size: 25px;
-  }
-}
-
 body {
   font-family: Averta;
 }
@@ -165,9 +204,48 @@ body p {
   }
 }
 
+.mrv__container {
+  color: #242625;
+}
+.mrv__title__h1 {
+  font-family: "Averta";
+  font-weight: 700;
+  font-size: 40px;
+}
+@media (max-width: 680px) {
+  .mrv__title__h1 {
+    font-size: 25px;
+  }
+}
 .mrv__text__white {
   color: #fff;
 }
 .mrv__text__green {
   color: #006B3F;
+}
+.mrv__button.green {
+  background-color: #006B3F;
+  padding: 16px;
+  border-radius: 8px;
+  border: none;
+}
+.mrv__button.green a {
+  color: #fff;
+}
+.mrv__button.green a:hover {
+  text-decoration: none;
+}
+.mrv__button.green:hover {
+  background-color: #079D56;
+  color: #fff;
+}
+@media (max-width: 680px) {
+  .mrv__desktop {
+    display: none;
+  }
+}
+@media (min-width: 681px) {
+  .mrv__mobile {
+    display: none;
+  }
 }
